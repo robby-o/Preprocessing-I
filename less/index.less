@@ -73,6 +73,11 @@ body {
 	font-weight: bold;
 }
 
+.flexColumn {
+	display: flex;
+	flex-direction: column;
+}
+
 @bgColor: #DDDDDD;
 
 h1, h2, h3 {
@@ -110,8 +115,7 @@ header {
 .top {
 	background-color: @bgColor;
 	border-radius: 2px;
-	display: flex;
-	flex-direction: column;
+	.flexColumn;
 	align-items: flex-start;
 	width: 80%;
 	height: 90%;
@@ -129,8 +133,7 @@ header {
 		}
 	}
 	.intro {
-		display: flex;
-		flex-direction: column;
+		.flexColumn;
 		justify-content: center;
 		margin: 5%;
 		@media (max-width: 500px) {
@@ -170,8 +173,7 @@ header {
 		align-items: center;
 	}
 	div {
-		display: flex;
-		flex-direction: column;
+		.flexColumn;
 		width: 48%;
 		margin: 2% 0;
 		@media (max-width: 500px) {
@@ -199,8 +201,7 @@ header {
 	width: 80%;
 	margin: 0 auto;
 	margin-bottom: 5%;
-	display: flex;
-	flex-direction: column;
+	.flexColumn;
 	div {
 		display: flex;
 		// justify-content: space-between;
