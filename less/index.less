@@ -53,7 +53,157 @@ table {
     box-sizing: border-box;
 }
 
+body {
+	font-size: 62.5%;
+}
 html, body {
-    height: 100%;
+	height: 100%;	
 }
 
+body {
+	width: 95%;
+	margin: 0 auto;
+}
+
+.fontImportant {
+	color: #001f3f;
+	font-weight: bold;
+}
+
+@bgColor: #DDDDDD;
+
+h1, h2, h3 {
+	.fontImportant;
+}
+h2 {font-size: 2rem;}
+h3 {font-size: 1.5rem;}
+p, li {font-size: 1rem;}
+
+header {
+	width: 80%;
+	display: flex;
+	justify-content: flex-end;
+	margin: 0 auto;
+	nav {
+		width: 25%;
+		margin: 2% 0;
+		display: flex;
+		justify-content: space-between;
+	}
+	nav a {
+		.fontImportant();
+		font-size: 1rem;
+		text-decoration: none;
+	}
+}
+
+.top {
+	background-color: @bgColor;
+	border-radius: 2px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 80%;
+	height: 90%;
+	margin: 0 auto;
+	
+	.image {
+		height: 40%;
+		width: 30%;
+		margin: 5%;	
+		img {
+		height: 100%;
+		width: 100%;
+		}
+	}
+	.intro {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: 5%;
+		h1 {
+			font-size: 4rem;
+			text-align: center;
+		}
+		h2 {
+			text-align: center;
+		}
+		p {
+			margin: 5% 0;
+		}
+		button {
+			width: 30%;
+			padding: 2%;
+			background-color: darkslategray;
+			color: whitesmoke;
+			border-radius: 6px;
+		}
+	}
+
+}
+
+.middle {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	div {
+		display: flex;
+		flex-direction: column;
+		width: 48%;
+		margin: 2% 0;
+		p, ul {
+			margin: 2% 0;
+		}
+		ul {
+			border: 1px solid lightgray;
+			border-radius: 2px;
+		}
+		li {
+			padding: 2%;
+			border-bottom: 1px solid lightgray;
+		}
+		li:last-child {
+			border-bottom: none;
+		  }
+	}
+}
+
+.bottom {
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 5%;
+	display: flex;
+	flex-direction: column;
+	div {
+		display: flex;
+		// justify-content: space-between;
+		p {
+			width: 25%;	
+			padding: 2%;
+		}
+		p:nth-child(1) {
+			.fontImportant;
+		}
+	}
+	.categories {
+		.fontImportant();
+	}
+	div:nth-child(odd) {
+		background: lightgray;
+	  }
+}
+
+footer {
+	height: 10%;
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: darkslategray;
+	border-radius: 2px;
+	p {
+		color: whitesmoke;
+	}
+}
